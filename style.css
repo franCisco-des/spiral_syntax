@@ -18,6 +18,12 @@
   margin: 0;
 }
 
+#header p {
+  font-family: 'MonumentGrotesk', sans-serif;
+  font-size: 12pt;
+  margin: 0;
+}
+
 #container {
   display: flex;
   gap: 20px;
@@ -218,3 +224,4 @@ label, span {
 .download-link:hover {
   background: #790000;
 }
+
