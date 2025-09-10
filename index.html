@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--ABRIR EM LIVE SERVER // NAO ABRE NO BROWSERs-->
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parametrics Circle</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="CCapture.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  <div id="header">
+  <h1>SPIRAL SYNTAX</h1>
+</div>
+<div id="container">
+  <div id="canvas-container"></div>
+
+  <div id="controls">
+    <div id="controls-container"> <!-- ESTE é o grupo principal de sliders + botões -->
+
+      <!-- Coluna esquerda: sliders -->
+      <div id="sliders-column">
+        <div class="control-box box-text">
+          <label for="inputText">Insert Text:</label>
+          <input type="text" id="inputText" value="INSERT TEXT" />
+        </div>
+
+        <div class="control-box box-text-styles">
+          <label for="fontSizeSlider">Font Size: <span id="fontSizeValue">32</span></label>
+          <input type="range" id="fontSizeSlider" min="8" max="72" step="1" value="32">
+
+          <label for="letterSpacingSlider">Letter Spacing: <span id="letterSpacingValue">0</span></label>
+          <input type="range" id="letterSpacingSlider" min="0" max="50" value="0">
+
+          <label for="letterStretchSlider">Horizontal Stretch: <span id="letterStretchValue">100%</span></label>
+          <input type="range" id="letterStretchSlider" min="50" max="200" value="100">
+
+          <label for="letterStretchYSlider">Vertical Stretch: <span id="letterStretchYValue">100%</span></label>
+          <input type="range" id="letterStretchYSlider" min="50" max="200" value="100">
+        </div>
+
+        <div class="control-box box-circles-speed">
+          <label for="amountSlider">Inner Circles: <span id="amountValue">1</span></label>
+          <input type="range" id="amountSlider" min="0" max="50" value="1" />
+
+          <label for="outerAmountSlider">Outer Circles: <span id="outerAmountValue">1</span></label>
+          <input type="range" id="outerAmountSlider" min="0" max="16" value="1" />
+
+          <label for="spacingSlider">Circle Spacing: <span id="spacingValue">15</span></label>
+          <input type="range" id="spacingSlider" min="0" max="50" value="15" />
+
+          <label for="speedSlider">Velocity: <span id="speedValue">0.01</span></label>
+          <input type="range" id="speedSlider" min="0" max="0.1" step="0.001" value="0.01">
+        </div>
+      </div>
+      <!-- Coluna direita: botões -->
+      <div id="buttons-group">
+        
+        <button id="randomButton" class="btn-random">Random</button>
+         <button id="toggleAnimationButton" class="btn-random2">Pause</button>
+        <button id="exportImgButton">Export Image</button>
+         <button id="recordBtn" class="btn-record">Record</button>
+       
+
+        
+      </div>
+
+    </div> <!-- fecha #controls-container -->
+  </div>
+</div>
+  <script src="sketch.js"></script>
+</body>
+</html>
